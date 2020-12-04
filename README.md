@@ -12,26 +12,26 @@ The task is to write a program that stores and retrieves structures in a file th
 - The following is the user interface of the program
         
         $ ./contactList
-        Do you wish to enter a new contact (Yes or No)?: Yes
-        First Name: John
-        Last Name: Mark
-        Company Name: Mark's
-        Phone Number (enter only numbers): 6458256547
-        Email: john23@mark.com
-        Do you wish to enter a new contact (Yes or No)?: No
-        Do you wish to retrieve a contact (Yes or No)?: Yes
-        Phone Number: 4161234456
+        Do you wish to enter a new contact (Yes or No)?: **Yes**
+        First Name: **John**
+        Last Name: **Mark**
+        Company Name: **Mark's**
+        Phone Number (enter only numbers): **6458256547**
+        Email: **john23@mark.com**
+        Do you wish to enter a new contact (Yes or No)?: **No**
+        Do you wish to retrieve a contact (Yes or No)?: **Yes**
+        Phone Number: **4161234456**
         No match found.
-        Do you wish to enter a new contact (Yes or No)?: No
-        Do you wish to retrieve a contact (Yes or No)?: Yes
-        Phone Number: 6458256547
+        Do you wish to enter a new contact (Yes or No)?: **No**
+        Do you wish to retrieve a contact (Yes or No)?: **Yes**
+        Phone Number: **6458256547**
         First Name: John
         Last Name: Mark
         Company Name: Mark's
         Phone Number: 6458256547
         Email: john23@mark.com
-        Do you wish to enter a new contact (Yes or No)?: No
-        Do you wish to retrieve a contact (Yes or No)?: No
+        Do you wish to enter a new contact (Yes or No)?: **No**
+        Do you wish to retrieve a contact (Yes or No)?: **No**
         $
 
 ## How to run?
