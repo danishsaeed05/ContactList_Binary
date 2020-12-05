@@ -13,42 +13,66 @@ int main()
 	
 	userInput = getUserInput();
 
-	if(strcmp(userInput, "Yes") == 0)
+	while(((strcmp(userInput, "Yes")) == 0) || ((strcmp(userInput, "No")) == 0))
 	{
 		char *firstName, *lastName, *phoneNum, *companyName, *email;
-		
-		printf("First Name: ");
-		firstName = getUserInput();
+		if((strcmp(userInput, "Yes")) == 0)
+		{
 
-		printf("Last Name: ");
-		lastName = getUserInput();
+			printf("First Name: ");
+			firstName = getUserInput();
 
-		printf("Company Name: ");
-		companyName = getUserInput();
+			printf("Last Name: ");
+			lastName = getUserInput();
 
-		printf("Phone Number: ");
-		phoneNum = getUserInput();
+			printf("Company Name: ");
+			companyName = getUserInput();
 
-		printf("Email: ");
-		email = getUserInput();
+			printf("Phone Number: ");
+			phoneNum = getUserInput();
 
-		printf("\n-------------\n");
-		printf("'%s'\n", firstName);
-		printf("'%s'\n", lastName);
-		printf("'%s'\n", companyName);
-		printf("'%s'\n", phoneNum);
-		printf("'%s'\n", email);
+			printf("Email: ");
+			email = getUserInput();
+
+			printf("\n-------------\n");
+			printf("'%s'\n", firstName);
+			printf("'%s'\n", lastName);
+			printf("'%s'\n", companyName);
+			printf("'%s'\n", phoneNum);
+			printf("'%s'\n", email);
+
+			/* Store data locations in the contact structure */
+			
+
+			printf("Do you wish to enter a new contact (Yes or No)?:");
+			userInput = getUserInput();
+		}else if ((strcmp(userInput, "No")) == 0)
+		{
+
+
+
+			printf("Do you wish to retrieve a contact (Yes or No)?:");
+			userInput = getUserInput();
+			if((strcmp(userInput, "No")) == 0)
+			{
+				break;
+			}
+			else if((strcmp(userInput, "Yes")) == 0)
+			{
+				printf("Phone Number: ");
+				phoneNum = getUserInput();
+				break;
+			}
+			else {
+				printf("Wrong input\n");
+			}
+		}
 
 	}
-	else {
-		printf("No match\n");
-	}
 
 
 
 
-
-	printf("Do you wish to retrieve a contact (Yes or No)?:");
 
 	return 0;
 }

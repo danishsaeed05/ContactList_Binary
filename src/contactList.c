@@ -5,7 +5,7 @@
 /* get the user's input by having method, in which it returns a pointer to where the char is located/stored */
 char* getUserInput()
 {
-	char *input, c;
+	char *input, c = ' ';
 	int size = 2;
 	int index = 0;
 
@@ -22,6 +22,7 @@ char* getUserInput()
 		index++;
 	}
 	input[index-1] = '\0';
+	printf("\nText = '%s' and size = %ld\n", input, strlen(input));
 	/*printf("The length of string is : %s\n", strlen(input));*/
 	return input;
 }
