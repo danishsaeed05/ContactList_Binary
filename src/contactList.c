@@ -22,11 +22,33 @@ char* getUserInput()
 		index++;
 	}
 	input[index-1] = '\0';
-	printf("\nText = '%s' and size = %ld\n", input, strlen(input));
-	/*printf("The length of string is : %s\n", strlen(input));*/
+
+	/*
+	Testing:
+	printf("The length of string is : %s\n", strlen(input));
+	*/
+
 	return input;
 }
 
+int isDigit(char *phoneNumber)
+{
+	int i;
+	if(strlen(phoneNumber) == 0)
+	{
+		return 1;
+	}
+
+	for(i=0; i<strlen(phoneNumber); i++)
+	{
+		/* if any of the characters is NOT a digit, then return 1 */
+		if(!isdigit(phoneNumber[i]))
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
 
 
 

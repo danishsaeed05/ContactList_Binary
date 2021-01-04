@@ -19,5 +19,6 @@ struct contact {
 };
 
 char* getUserInput();
+int isDigit(char *phoneNumber);
 
 #endif
